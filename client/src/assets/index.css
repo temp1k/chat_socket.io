@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #413f3f;
+    --second-color: white;
+    --primary-form-color: #3e30de;
+    --second-form-color: red;
+    --success-color: green;
+    --danger-color: #f32424;
+    --color-border: #bfdbdb;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+}
+
+#root {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.35rem 0.75rem;
+    vertical-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-outline-success {
+    color: var(--success-color);
+    border-color: var(--success-color);
+}
+.btn-outline-success:hover {
+    color: var(--second-color);
+    background-color: var(--success-color);
+}
+
+.btn-success {
+    color: var(--second-color);
+    background-color: var(--success-color);
+}
+.btn-success:hover {
+    filter: brightness(90%);
+}
+
+.btn-outline-danger {
+    color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+.btn-outline-danger:hover {
+    color: var(--second-color);
+    background-color: var(--danger-color);
+}
+
+.btn-danger {
+    color: var(--second-color);
+    background-color: var(--danger-color);
+}
+.btn-danger:hover {
+    filter: brightness(90%);
+}
+
+.d-flex {
+    display: flex!important;
+}
+.justify-center {
+    justify-items: center!important;
+}
+
+.container {
+    margin: auto;
+    max-width: 960px;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    font-size: 16px;
+}
+
+.form-white {
+    background-color: var(--second-color);
+    color: black;
+}
+
+.form-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group .form-label, .form-input {
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-label {
+    opacity: 0.8;
+}
+.form-input {
+    padding: 0.3rem 0.75rem;
+    border: 2px solid var(--primary-form-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.form-input:focus {
+    border-color: var(--second-form-color)
+}
+
+.form-button {
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
